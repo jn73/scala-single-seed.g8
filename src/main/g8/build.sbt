@@ -28,9 +28,5 @@ libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % scalatestVersion
 )
 
-test in Test := {
-  val _ = (g8Test in Test).toTask("").value
-}
-
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
